@@ -1,1 +1,1 @@
-Export your RNBO code into this directory
+You can find pre-exported stuff in here.

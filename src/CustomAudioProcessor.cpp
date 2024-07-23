@@ -1,5 +1,5 @@
 #include "CustomAudioProcessor.h"
-#include "CustomAudioEditor.h"
+#include "BlobAudioProcessorEditor.h"
 #include <json/json.hpp>
 
 #ifdef RNBO_INCLUDE_DESCRIPTION_FILE
@@ -37,7 +37,7 @@ CustomAudioProcessor::CustomAudioProcessor(
 AudioProcessorEditor* CustomAudioProcessor::createEditor()
 {
     //Change this to use your CustomAudioEditor
-    //return new CustomAudioEditor (this, this->_rnboObject);
-    return RNBO::JuceAudioProcessor::createEditor();
+    return new RNBO::BlobAudioProcessorEditor (this, this->_rnboObject);
+    // return RNBO::JuceAudioProcessor::createEditor();
 }
 

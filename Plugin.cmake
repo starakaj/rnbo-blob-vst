@@ -54,6 +54,7 @@ target_sources(RNBOAudioPlugin PRIVATE
   src/Plugin.cpp
   src/CustomAudioEditor.cpp
   src/CustomAudioProcessor.cpp
+  src/BlobAudioProcessorEditor.cpp
   )
 
 if (EXISTS ${RNBO_BINARY_DATA_FILE})
